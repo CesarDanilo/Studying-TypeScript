@@ -1,12 +1,12 @@
 "use strict";
 function showUserDetails(user) {
-    console.log(`Usuario: ${user.email}`);
     if (user.role) {
-        console.log("Esse usuario é admin");
+        return `Usuario: ${user.email}, ADMIN? ${user.role}`;
     }
+    return `Usuario: ${user.email}`;
 }
 const u1 = {
-    email: "cesardanilo@gmail.com",
+    email: "cesardanilopalacios@gmail.com",
     role: true
 };
-showUserDetails(u1);
+console.log(showUserDetails(u1));
